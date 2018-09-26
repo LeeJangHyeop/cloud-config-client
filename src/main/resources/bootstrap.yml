@@ -6,3 +6,9 @@ spring:
       uri: http://localhost:9000
   profiles:
     active: local
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['*']
+      base-path: /
